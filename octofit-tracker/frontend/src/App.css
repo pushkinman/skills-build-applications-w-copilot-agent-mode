@@ -1,0 +1,49 @@
+:root {
+  --octofit-surface: #f6f7fb;
+  --octofit-accent: #0d6efd;
+  --octofit-ink: #10233a;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--octofit-ink);
+  background:
+    radial-gradient(circle at 10% 15%, rgba(13, 110, 253, 0.15), transparent 34%),
+    radial-gradient(circle at 85% 10%, rgba(255, 193, 7, 0.16), transparent 30%),
+    var(--octofit-surface);
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.app-navbar {
+  background: #ffffffcc;
+  backdrop-filter: blur(4px);
+}
+
+.app-navbar .nav-link {
+  transition: all 0.2s ease-in-out;
+}
+
+.app-navbar .nav-link:hover {
+  background: #e9f2ff;
+}
+
+.table > :not(caption) > * > * {
+  vertical-align: middle;
+}
+
+.modal-backdrop-soft {
+  position: fixed;
+  inset: 0;
+  background: rgba(16, 35, 58, 0.5);
+  z-index: 1040;
+}
+
+.modal.show.d-block {
+  z-index: 1050;
+}
